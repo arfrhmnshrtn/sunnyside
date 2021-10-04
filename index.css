@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+}
+.home{
+    height: 100vh;
+    background: url('images/desktop/image-header.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#contact{
+    color: #000;
+    padding: 10px 32px;
+    background: #fff;
+    border-radius: 30px;
+}
+#contact:hover{
+    background-color: rgb(110,206,255);
+    color: #fff;
+}
+#navbar-menu.active{
+    background-color: rgba(53,163,217, 0.5);
+}
+#navbar-menu.active2{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.graphic-design{
+    background-image: url(images/desktop/image-graphic-design.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+.photography{
+    background-image: url(images/desktop/image-photography.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+#btn a{
+    transition: 0.8s ease;
+    padding: 10px 20px;
+    border-bottom: 5px solid rgb(254,114,99);
+    outline: none;
+    color: #000;
+}
+#btn a:hover{
+    box-shadow: inset 0 -3.25em 0 0 rgb(254,114,99);
+    color: #fff;
+}
+
+#btn-orange a{
+    transition: 0.8s ease;
+    padding: 10px 20px;
+    border-bottom: 5px solid rgb(254,210,1);
+    outline: none;
+    color: #000;
+}
+#btn-orange a:hover{
+    box-shadow: inset 0 -3.25em 0 0 rgb(254,210,1);
+    color: #fff;
+}
+#footer .list .list-item{
+    list-style: none;
+}
+#footer .list .list-item a{
+    color: rgb(44,117,102);
+}
+@media only screen and (max-width: 768px){
+    #wrapper-content .card-img{
+        display: grid;
+        grid-template-areas: 
+        'poto poto poto'
+        'text text text'
+        ;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 50px;
+        text-align: center;
+        
+    }
+    
+    #wrapper-content .card-img .text{
+        grid-area: text;
+        width: 100%;
+        padding: 30px;
+    }
+    #wrapper-content .card-img .image{
+        grid-area: poto;
+    }
+    #btn, #btn-orange{
+        display: flex;
+        justify-content: center;
+    }
+    #footer .list ul{
+        flex-direction: column;
+        /* text-align: center; */
+    }
+}
