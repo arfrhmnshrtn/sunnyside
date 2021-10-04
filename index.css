@@ -65,6 +65,17 @@
 }
 #footer .list .list-item a{
     color: rgb(44,117,102);
+    transition: .5s ease;
+}
+#footer .list .list-item a:hover{
+    color: #fff;
+}
+#icon img{
+    transition: .5s ease;
+    cursor: pointer;
+}
+#icon img:hover{
+    background-color: #fff;
 }
 @media only screen and (max-width: 768px){
     #wrapper-content .card-img{
@@ -94,5 +105,25 @@
     #footer .list ul{
         flex-direction: column;
         /* text-align: center; */
+    }
+    #galery .wrapper{
+        display: grid;
+        grid-template-areas: 
+        'satu dua'
+        'tiga empat'
+        ;
+    }
+    
+    #galery .wrapper .img-galery:nth-child(1){
+        grid-area: satu;
+    }
+    #galery .wrapper .img-galery:nth-child(2){
+        grid-area: dua;
+    }
+    #galery .wrapper .img-galery:nth-child(3){
+        grid-area: tiga;
+    }
+    #galery .wrapper .img-galery:nth-child(4){
+        grid-area: empat;
     }
 }
